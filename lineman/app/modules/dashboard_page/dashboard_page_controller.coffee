@@ -1,7 +1,7 @@
 angular.module('loomioApp').controller 'DashboardPageController', ($scope, Records) ->
 
-  $scope.pageHash    = { unread: {}, all: {} }
-  $scope.perPage     = { date: 25, group: 10 }
+  $scope.pageHash = { unread: {}, all: {} }
+  $scope.perPage  = { date: 25, group: 5 }
 
   $scope.refresh = (options = {}) ->
     params =
@@ -33,17 +33,20 @@ angular.module('loomioApp').controller 'DashboardPageController', ($scope, Recor
       .slice(0, $scope.limitFor('date'))
 
   $scope.dashboardGroups = ->
-    window.Loomio.currentUser.groups()
+    _.filter window.Loomio.currentUser.groups(), (group) -> group.isParent()
+  _.each $scope.dashboardGroups(), (group) -> $scope.iterateLimit(group.id)
 
   $scope.footerReached = ->
     return false if $scope.loadingDiscussions
-    $scope.loadingDiscussions = true
-    $scope.loadMore().then -> $scope.loadingDiscussions = false
+    $scope.loadingDiscussionsDate = true
+    $scope.loadMore().then ->
+      $scope.loadingDiscussionsDate = false
 
-  $scope.loadMoreFromGroup = (groupId) ->
+  $scope.loadMoreFromGroup = (group) ->
     return false if $scope.loadingDiscussions
-    $scope.loadingDiscussions = true
-    $scope.loadMore({groupId: groupdId}).then -> $scope.loadingDiscussions = false
+    $scope["loadingDiscussions#{group.id}"] = true
+    $scope.loadMore({groupId: group.id}).then ->
+      $scope["loadingDiscussions#{group.id}"] = false
 
   $scope.loadMore = (options = {}) ->
     $scope.refresh(options).then -> $scope.iterateLimit(options['groupId'])
@@ -92,6 +95,9 @@ angular.module('loomioApp').controller 'DashboardPageController', ($scope, Recor
     _.find $scope.dashboardDiscussions(), (discussion) ->
       $scope.older(discussion) and $scope.unread(discussion)
 
+  $scope.groupName = (group) ->
+    group.name
+
   $scope.anyThisGroup = (group) ->
-    _.find $scope.dashboardDiscussions(), (discussion) ->
-      discussion.groupId == group.id and $scope.unread(discussion)
+    _.find group.discussions(), (discussion) ->
+      $scope.unread(discussion)
