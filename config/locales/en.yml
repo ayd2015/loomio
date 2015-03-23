@@ -588,9 +588,9 @@ en:
     motion_description_edited: 'edited the draft statement proposal description'
 
   discussion: "Discussion"
-  current_decision: "Current decision"
-  previous_decisions: "Previous decisions"
-  see_previous_decisions: "See previous decisions"
+  current_decision: "Current draft statements"
+  previous_decisions: "Previous statements"
+  see_previous_decisions: "See previous statements"
   see_more: "See more"
   create_new_proposal: "Create a draft statement"
   empty_decision_list_html: "Ready to write a draft statement? <br> Anyone can start a proposal."
@@ -671,7 +671,7 @@ en:
   proposal_close_date_error: "Please give a future close date"
   proposal_closing_when: "Closing in %{when}"
   proposal_closed_when: "Closed %{when} ago"
-  proposed_when_by_who: "Draft statement poposed by %{who} %{when} ago"
+  proposed_when_by_who: "Draft statement proposed by %{who} %{when} ago"
   engagement_on_open_proposal: "%{percent}%% of members have stated their position (%{numerator}/%{denominator})"
   engagement_on_closed_proposal: "%{percent}%% of members stated their position (%{numerator}/%{denominator})"
 
@@ -1208,8 +1208,8 @@ en:
       headline: "%{author}'s draft statement proposal is closing soon:"
       summary: "Summary"
     thread_mailer:
-      footer_text: "Reply to this email directly or view it online:"
-      reply_or_view_online_html: "Reply to this email directly or <a href='%{url}'>view it online</a>."
+      footer_text: "View this online:"
+      reply_or_view_online_html: "<a href='%{url}'>View this online</a>."
       turn_off_notifications_html: "<a href='%{url}'>Turn off emails</a> for this discussion."
       turn_off_notifications_text: "Turn off emails for this discussion: %{url}"
       turn_on_notifications_html: "<a href='%{url}'>Turn on emails for this discussion</a> to receive further activity."

@@ -8,7 +8,7 @@ class BaseMailer < ActionMailer::Base
 
   add_template_helper(ReadableUnguessableUrlsHelper)
 
-  default :from => "Loomio <notifications@loomio.org>"
+  default :from => "Aotearoa Youth Declaration <youthdeclaration@unyouth.org.nz>"
   before_action :utm_hash
 
   protected
@@ -21,7 +21,7 @@ class BaseMailer < ActionMailer::Base
   end
 
   def email_subject_prefix(group_name)
-    "[Loomio: #{group_name}]"
+    "[Aotearoa Youth Declaration: #{group_name}]"
   end
 
   def initialize(method_name=nil, *args)
@@ -31,6 +31,6 @@ class BaseMailer < ActionMailer::Base
   end
 
   def from_user_via_loomio(user)
-    "\"#{user.name} (Loomio)\" <notifications@loomio.org>"
+    "\"#{user.name} (Aotearoa Youth Declaration)\" <youthdeclaration@unyouth.org.nz>"
   end
 end
