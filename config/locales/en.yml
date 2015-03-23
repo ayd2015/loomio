@@ -3,19 +3,19 @@ en:
   email_settings:
     title: 'Email settings'
     group_volume: Group volume
-    group_volume_description: 'Volume controls how much email you get from a group. Set volume for all of your groups:'
+    group_volume_description: 'Volume controls how much email you get from the group. Set volume for the group:'
     to_change_one_group: To change the volume of just one of your groups, visit that group's page.
     discussion_activity: Change discussion volume when I participate
     discussion_activity_description: When you participate in a discussion, the volume setting will be changed to 'Loud', so all further activity will be emailed to you immediately.
     yesterday_on_loomio: Email me a summary of activity each day
-    yesterday_on_loomio_description: Each day at 6am, send an email with yesterday's unread activity. This is a great way to catch up on your groups and it contains everything that is not muted.
+    yesterday_on_loomio_description: Each day at 6am, send an email with yesterday's unread activity. This is a great way to catch up on the groupsand it contains everything that is not muted.
     email_when_mentioned: Email me when I am @mentioned
     email_when_mentioned_description: When someone wants to get your attention, they'll @mention you. We recommend you leave this setting checked, so that you will get an email when this happens.
-    proposal_closing_soon: Email me before a proposal closes
-    proposal_closing_soon_description: 24 hours before a proposal closes, regardless of volume, you will get an email with the latest information about the proposal.
+    proposal_closing_soon: Email me before a draft statement closes
+    proposal_closing_soon_description: 24 hours before a draft statement closes, regardless of volume, you will get an email with the latest information about the draft statement.
     submit: Update settings
     no_change: No change
-    no_change_description: Leave the volume level of my groups as is.
+    no_change_description: Leave the volume level as is.
 
   explore:
     header: "Explore public groups"
@@ -60,7 +60,7 @@ en:
       no_invitations_remaining: "No invitations remaining"
     mailer:
       invitation_instructions:
-        subject: 'Someone has invited you to join their Loomio group'
+        subject: 'Someone has invited you to join the Aotearoa Youth Declaration discussion'
     registrations:
       sign_up: 'Create account'
     sessions:
@@ -105,7 +105,7 @@ en:
     new_contacts_imported: "That worked! You can type names into the field below and we'll suggest the email address."
     admin_rights_removed: "%{which_user}'s coordinator rights have been removed."
     user_added: "%{user_email_or_name} has been added to the group."
-    new_user_added: "%{user_email_or_name} will be added to the group after they set up a Loomio account."
+    new_user_added: "%{user_email_or_name} will be added to the group after they set up an account."
     member_removed: "Member removed."
     membership_approved: "Membership approved."
     membership_request_canceled: "Membership request canceled."
@@ -161,8 +161,8 @@ en:
     group_created: "Group created successfully."
     members_added: "Members added to group."
     membership_requested: "You've asked to join %{which_group}. You will be notified once your request has been approved."
-    motion_closed: "Proposal closed. If you like, you can set an outcome below and send it to your group."
-    motion_outcome_created: "Congratulations, you've created a proposal outcome and your group members have been notified."
+    motion_closed: "Proposal closed. Soon, a facilitator will set an outcome below and send it to the group."
+    motion_outcome_created: "Congratulations, you've created a proposal outcome and the group members have been notified."
     motion_outcome_updated: "The proposal outcome has been updated."
     password_updated: "Your password was changed successfully"
     position_submitted: "Position submitted"
@@ -236,7 +236,7 @@ en:
   notifications:
     header: "Notifications"
     new_discussion: "started a discussion"
-    new_motion: "created a proposal"
+    new_motion: "created a draft statement"
     motion_closed:
       by_user: "closed the proposal"
       by_expiry: "Proposal has closed"
@@ -264,28 +264,28 @@ en:
   find_a_group_hint: "To explore public groups"
   search_for_group: "Search for a group..."
   no_groups_found: "No groups found by that name!"
-  no_group_header: "Welcome to Loomio Beta"
+  no_group_header: "Welcome"
   empty_notifications: "You do not have any notifications yet."
   see_all_notifications: "See all notifications"
   sign_out: "Sign out"
   sign_in: "Log in"
   honeypot_warning: "Could not create your account. If you're using a screen reader, please make sure the last (hidden) field on the form is blank."
   tagline: "Creating a world where it's easy for anyone to participate in decisions that affect them."
-  or_sign_in_html: "If you already have a Loomio account, <a href='%{link}' class='%{link_class}'>log in here</a>"
-  or_link_account_html: "If you already have a Loomio account, <a href='%{link}'>link it up</a>"
+  or_sign_in_html: "If you already have an Online Focus Group account, <a href='%{link}' class='%{link_class}'>log in here</a>"
+  or_link_account_html: "If you already have a Online Focus Group account, <a href='%{link}'>link it up</a>"
 
   click_to_dismiss: "Click here to dismiss this message"
   generic_confirm: "Are you sure?"
 
   discussion_helper_text:
     header: "Welcome to your first discussion"
-    message: "<p>The topic is at the top of the page, with context underneath.</p><p>Discussion is on the left, decisions come up on the right. If you think the group is ready to make a decision, you can make a proposal for the group to consider.</p>"
+    message: "<p>The topic is at the top of the page, with context underneath.</p><p>Discussion is on the left, decisions come up on the right. If you think the group is ready to make a draft statement, you can make a proposal for the group to consider.</p>"
   group_helper_text:
     header: "Welcome to your new group!"
     message: "<p>This is the <strong>group page</strong>. On the left is a list of all the discussions in this group.</p><p>When you want the group to discuss another topic, start a new discussion.</p>"
   dashboard_helper_text:
     header: "Welcome to your Home page"
-    message: "<p>The home page shows you all of the current discussions in all the groups you are a member of.</p><p>You can start a discussion on a new topic by clicking the “Start discussion” button.</p>"
+    message: "<p>The home page shows you all of the current discussions.</p><p>You can start a discussion on a new topic by clicking the “Start discussion” button.</p>"
 
   prompt_visitor_to_authenticate:
     header: "Log in or join group to participate"
@@ -332,7 +332,7 @@ en:
       edit_comments: Edit their comments at any time
       edit_discussions: Edit the context of any discussion in the group
       start_discussions: Start discussions
-      raise_motions: Raise proposals
+      raise_motions: Create draft statements
       vote: Vote on proposals
       create_subgroups: Create subgroups
     motions_can_be_edited: Edit their proposals after voting has started
@@ -575,26 +575,26 @@ en:
     user_blocked_on_proposal_with_statement_html: "<strong>%{name}</strong> blocked on the proposal:"
   discussion_items:
     new_discussion: "created the discussion"
-    new_motion: "created a proposal"
+    new_motion: "created a draft statement"
     motion_closed:
-      by_user: "closed the proposal"
-      by_expiry: "Proposal closed"
-    motion_close_date_edited: "changed the closing date for the proposal"
-    motion_outcome_created: "published an outcome for the proposal"
-    motion_outcome_updated: "updated the outcome for the proposal"
+      by_user: "closed the draft statement proposal"
+      by_expiry: "Draft statement proposal closed"
+    motion_close_date_edited: "changed the closing date for the draft statement proposal"
+    motion_outcome_created: "published an outcome for the draft statement proposal"
+    motion_outcome_updated: "updated the outcome for the draft statement proposal"
     discussion_title_edited: "changed the discussion title"
     discussion_description_edited: "changed the discussion description"
-    motion_name_edited: 'edited the proposal title'
-    motion_description_edited: 'edited the proposal description'
+    motion_name_edited: 'edited the draft statement'
+    motion_description_edited: 'edited the draft statement proposal description'
 
   discussion: "Discussion"
   current_decision: "Current decision"
   previous_decisions: "Previous decisions"
   see_previous_decisions: "See previous decisions"
   see_more: "See more"
-  create_new_proposal: "Create a proposal"
-  empty_decision_list_html: "Ready to make a decision? <br> Anyone can start a proposal."
-  empty_decision_index: "This group has not made any decisions yet."
+  create_new_proposal: "Create a draft statement"
+  empty_decision_list_html: "Ready to write a draft statement? <br> Anyone can start a proposal."
+  empty_decision_index: "This group has not made any statements yet."
   empty_discussion_list: "There is no activity in this discussion yet."
   go_to_add_comment_html: "To add a comment, <a href='%{href}'>go to the end of the discussion</a>."
   comment_by: "Comment by %{comment_author}"
@@ -661,17 +661,17 @@ en:
   # DECISIONS / PROPOSALS / MOTIONS
   #
 
-  new_proposal: "New Proposal"
-  edit_proposal: "Edit Proposal"
-  close_proposal: "Close proposal"
-  confirm_close_proposal: "Are you sure you want to close this proposal?"
+  new_proposal: "New draft statement"
+  edit_proposal: "Edit draft statement"
+  close_proposal: "Close draft statement proposal"
+  confirm_close_proposal: "Are you sure you want to close this draft statement proposal?"
   change_proposal_close_date: "Change close date"
-  change_proposal_close_date_header: "Change the close date for the proposal '%{which}'"
+  change_proposal_close_date_header: "Change the close date for the draft statement proposal '%{which}'"
   proposal: Proposal
   proposal_close_date_error: "Please give a future close date"
   proposal_closing_when: "Closing in %{when}"
   proposal_closed_when: "Closed %{when} ago"
-  proposed_when_by_who: "Proposed by %{who} %{when} ago"
+  proposed_when_by_who: "Draft statement poposed by %{who} %{when} ago"
   engagement_on_open_proposal: "%{percent}%% of members have stated their position (%{numerator}/%{denominator})"
   engagement_on_closed_proposal: "%{percent}%% of members stated their position (%{numerator}/%{denominator})"
 
@@ -687,7 +687,7 @@ en:
   block_details: "I have strong objections to this proposal and am not OK with it going ahead."
   not_voted: "[Show members who have not yet decided]"
   outcome: "Outcome"
-  outcome_placeholder: "What was the outcome of this proposal?"
+  outcome_placeholder: "What was the outcome of this draft statement proposal?"
   outcome_submit: "Publish outcome"
 
   position_verbs:
@@ -702,8 +702,8 @@ en:
       block: "blocked"
 
   unable_to_vote:
-    permission_denied: "You do not have permission to vote on this motion"
-    motion_closed: "This motion has already closed"
+    permission_denied: "You do not have permission to vote on this draft statement"
+    motion_closed: "This draft statement proposal has already closed"
 
   edit_comment:
     comment_changes: "Comment changes"
@@ -902,20 +902,20 @@ en:
   link_it_up_instead: "Link it up instead"
   sign_up_via: "Sign up via"
   or_fill_in_this_form: "or fill in this form"
-  already_have_account: "Already have a Loomio account?"
+  already_have_account: "Already have an account?"
   confirm_your_details: "Confirm your details"
   link_up_your_account: "Link up your account"
-  log_in_to_your_loomio_account: "Log in to your Loomio account to link it up with %{provider_name}."
+  log_in_to_your_loomio_account: "Log in to your account to link it up with %{provider_name}."
   now_that_your_logged_in: "Now that you've logged in with %{provider_name}, please confirm your details to create a Loomio account."
   confirmation_not_received: "Didn't receive confirmation instructions?"
   unlock_not_received: "Didn't receive unlock instructions?"
   inactive_html: "This account has been deactivated. If you have any questions please <a href='%{path_to_contact}'>get in touch</a>."
-  create_an_account_html: 'Create a Loomio Beta account'
+  create_an_account_html: 'Create an account'
   log_in: "Log in"
 
   join_group:
-    log_in: "Log in to join %{group_name}"
-    create_account_to_join_group: "Please create an account to join %{group_name}"
+    log_in: "Log in to join the %{group} Focus Group"
+    create_account_to_join_group: "Please create an account to the %{group} Focus Group"
 
   start_group:
     log_in: "Log in to set up your group"
@@ -930,13 +930,13 @@ en:
     alternate: "Alternatively, share this link and anyone can ask to join:"
     by_email: "Invite by email"
     no_invitations_left: "Sorry you don't have any invitations left"
-    no_invitations_left_get_more: "Please email contact@loomio.org and we'll see what we can do to help you"
+    no_invitations_left_get_more: "Please email youthdeclaration@unyouth.org.nz and we'll see what we can do to help you"
     invitation_not_found:  'Could not find invitation with that token. Please ask for a new invitation from the sender.'
     invitation_cancelled: 'This invitation has been cancelled. Please contact the sender of the invitation if you believe this was done in error.'
     invitation_already_used: 'This invitation has already been used. Please log in to continue to your group.'
     recipients: "Enter email addresses, separated by commas:"
     invitees_placeholder: "User Name <user1@example.com>, user2@example.com"
-    subject: "Please join our new Loomio group, %{group}"
+    subject: "Please join the %{group} Focus Group"
     invite_people: "Invite people to your group"
     invite_to_discussion: "Invite people to this discussion"
     invite_to_discussion_info: "Adding people to this discussion will send them an invitation to your group. When they accept, they'll be directed to this discussion."
@@ -949,7 +949,7 @@ en:
     invites_more_help2: "<p>You can invite people to your group at any time.</p><p>You might want to invite all your members in right away, or you could start by inviting just the people you’re working most closely with.</p>"
     invitation_link: "Invitation link"
     discussion_link: "Participate in the discussion:"
-    link_help: "Click this link to join %{group} on Loomio:"
+    link_help: "Click this link to join the %{group} Focus Group:"
     copy: "If someone did not get their invitation email, please feel free to copy the invitation link above and give it to the recipient yourself."
     pending_invitations: 'Pending invitations'
     no_pending_invitations: "There are currently no pending invitations."
@@ -1019,19 +1019,19 @@ en:
       will_be_public: "Anyone can see the discussion."
 
   motion_history:
-    title: "Proposal changes"
+    title: "Draft staatment proposal changes"
 
   motion_form:
     new:
-      header: "New proposal"
-      submit: 'Create proposal'
+      header: "New draft statement"
+      submit: 'Create draft statement'
 
     edit:
-      header: "Edit proposal"
-      submit: 'Update proposal'
-      only_closing_at: 'You cannot change the proposal name or description after voting has started'
+      header: "Edit draft statement"
+      submit: 'Update draft statement'
+      only_closing_at: 'You cannot change the draft statement or description after voting has started'
 
-    name_helper: "Make the title as clear and succinct as possible."
+    name_helper: "Make the draft statement as clear and succinct as possible."
     close_proposal_heading: "Want to close the proposal early?"
 
   vote_form:
@@ -1128,50 +1128,50 @@ en:
     by_who: "by %{person}"
     reply_to_this_discussion: Reply to this discussion
     to_join_discussion:
-      subject: "%{who} wants you to join a discussion on Loomio"
+      subject: "%{who} wants you to join a discussion in the %{group_name} Focus Group"
       content: "You've been invited to participate in the discussion: %{discussion}"
       message_intro: "%{who} says:"
       link: "Join the discussion"
     to_join_group:
-      subject: "%{member} has invited you to join %{group_name} on Loomio"
+      subject: "%{member} has invited you to join the %{group_name} Focus Group"
     to_start_group:
-      subject: "Set up your new Loomio group: %{group_name}"
+      subject: "Set up your the %{group_name} Focus Group"
     user_added_to_a_group:
-      subject: "%{who} has added you to %{which_group}"
-      content: "%{who} has added you to %{which_group} on Loomio. Click here to go to the group:"
+      subject: "%{who} has added you to the %{which_group} Focus Group"
+      content: "%{who} has added you to the %{which_group} Focus Group. Click here to go to the group:"
     unsubscribe: "Unsubscribe or change your email preferences:"
     unsubscribe_html: "<a href='%{link_path}'>%{link_text}</a> to unsubscribe or change your email preferences."
-    view_comment: "Click here to view the comment on Loomio"
+    view_comment: "Click here to view the comment online"
     view_discussion: "Click here to view this discussion"
-    view_group: "Click here to view the group on Loomio"
-    view_proposal: "View this proposal on Loomio"
+    view_group: "Click here to view the group online"
+    view_proposal: "View this proposal online"
     create_discussion:
-      intro: "%{who} started a discussion in %{which_group}:"
+      intro: "%{who} started a discussion in the %{which_group} Focus Group:"
     create_proposal:
-      intro: "A new proposal was created in a Loomio group that you belong to."
+      intro: "A new draft statmement was created in the %{group_name} Focus Group"
       closes_in: "Closes in"
       subject: "New proposal: %{which}"
     daily_activity:
-      heading: "Your Loomio Activity"
-      intro: "Showing you what’s been happening in your Loomio groups in the last 24 hours"
-      subject: "Loomio - Summary of the last 24 hours"
+      heading: "Your Online Focus Group Activity"
+      intro: "Showing you what’s been happening in the Civic Engagement Focus Group in the last 24 hours"
+      subject: "Civic Engagement Online Focus Group - Summary of the last 24 hours"
     missed_yesterday:
-      subject: "Yesterday on Loomio"
+      subject: "Yesterday in the Online Focus Group "
       headlines: Headlines
       mark_as_read: Mark as read
       thanks_for_reading: Thanks for reading, have a great day!
       click_here_to_mark_all_as_read_html: |
-        Here's what happened on Loomio yesterday.
+        Here's what happened in the Online Focus Group yesterday.
         Once you've read it, click <a href="%{link}">mark as read</a> to remove it from your Loomio Inbox.
       marked_as_read_success: "Everything from the email has been marked as read"
 
     comment_replied_to:
       context: "%{author_name} replied to your comment in the discussion \"%{discussion_title}\""
-      subject: "%{who} replied to your comment in the %{which} group on Loomio"
+      subject: "%{who} replied to your comment in the %{which} group in the Online Focus Group"
     group_email:
       intro: "%{who} made an announcement to %{group}:"
     group_membership_approved:
-      intro: "Your request for access to the group '%{group_name}' on Loomio has been approved."
+      intro: "Your request for access to the %{group_name} Online Focus Group has been approved."
       subject: "Membership approved"
     invitation:
       hi: "Hi %{name},"
@@ -1179,21 +1179,21 @@ en:
       closing_message: "If you’ve got any questions or if there’s anything at all we can do to help you get up and running, we’d love to hear from you - just reply to this email."
       thanks: |
         Thanks!
-        The Loomio Team
+        Aotearoa Youth Declaration
     membership_request:
-      intro: "%{name} (%{email}) has requested access to one of your Loomio groups."
+      intro: "%{name} (%{email}) has requested access to one the group."
       subject: "%{who} has requested to join %{which_group}"
       view_group: "You can approve or decline the request here"
     mentioned:
       context: "%{author_name} mentioned you while discussing \"%{discussion_title}\""
-      subject: "%{who} mentioned you in the %{which} group on Loomio"
+      subject: "%{who} mentioned you in the %{which} Focus Group"
     new_motion_created:
-      subject: "Proposal: %{proposal_title}"
-      context: "%{author} created a proposal in %{group_full_name}:"
+      subject: "New draft statement: %{proposal_title}"
+      context: "%{author} created a draft statement proposal:"
     proposal_closed:
       proposal_has_closed: 'The proposal has closed.'
-      specify_outcome_and_notify_group: "Create an outcome and send it to your group!"
-      specify_outcome_and_notify_group_html: "Create an outcome and send it to your group!"
+      specify_outcome_and_notify_group: ""
+      specify_outcome_and_notify_group_html: ""
       subject: "Proposal closed - %{which}"
     proposal_outcome:
       subject: "Proposal outcome"
@@ -1205,11 +1205,11 @@ en:
       closes_at: "Closes at"
       closes_in: "Closes in"
       subject: "Closing in 24 hours: %{proposal_title}"
-      headline: "%{author}'s proposal in %{group} is closing soon:"
+      headline: "%{author}'s draft statement proposal is closing soon:"
       summary: "Summary"
     thread_mailer:
-      footer_text: "Reply to this email directly or view it on %{hostname}:"
-      reply_or_view_online_html: "Reply to this email directly or <a href='%{url}'>view it on %{hostname}</a>."
+      footer_text: "Reply to this email directly or view it online:"
+      reply_or_view_online_html: "Reply to this email directly or <a href='%{url}'>view it online</a>."
       turn_off_notifications_html: "<a href='%{url}'>Turn off emails</a> for this discussion."
       turn_off_notifications_text: "Turn off emails for this discussion: %{url}"
       turn_on_notifications_html: "<a href='%{url}'>Turn on emails for this discussion</a> to receive further activity."
@@ -1217,11 +1217,11 @@ en:
       change_email_preferences_html: "Change your <a href='%{email_preferences_url}'>email preferences</a> to unsubscribe from these emails."
       change_preferences: "Change your email preferences:"
       new_motion: "%{who} proposed:"
-      motion_closing_soon: "Proposal closing in 24 hours:"
+      motion_closing_soon: "Draft statement proposal closing in 24 hours:"
       proposal_closed: "Proposal closed:"
-      specify_outcome_html: "Your proposal has closed. <a href='%{link}'>Specify an outcome</a> to let everyone know what the result is."
-      specify_outcome: "Your proposal has closed. Specify an outcome to let everyone know what the result is:"
-      outcome_created: "%{who} set a proposal outcome:"
+      specify_outcome_html: "Your proposal has closed. A faciltator will soon specify an outcome to let everyone know what the result is."
+      specify_outcome: "Your proposal has closed. A faciltator will soon specify an outcome to let everyone know what the result is:"
+      outcome_created: "%{who} has set a proposal outcome:"
       you_agreed: "You %{past_tense_position}"
     verification:
       header: "You're almost done!"
@@ -1234,21 +1234,21 @@ en:
   #
 
   meta_tags:
-    default_title: "Loomio | Collaborative Decision-Making"
-    default_description: Loomio is an easy to use online tool for group decision-making. It allows dispersed groups to reach decisions quickly and take constructive action.
+    default_title: "Aotearoa Youth Declaration | Online Focus Group"
+    default_description: Share and debate your ideas, opinions and views on Civic Engagement and create the pre-eminent youth voice document in New Zealand, the Youth Declaration.
 
   #
   # COMMON WORDS
   #
 
-  about_loomio: "About Loomio"
+  about_loomio: "About Aotearoa Youth Declaration"
   ago: "%{quantity_of_time} ago"
   approve: "Approve"
   author: "Author"
   back: "Back"
   cancel: "Cancel"
   change: "Change"
-  change_language: "Click here to use Loomio in %{language}"
+  change_language: "Click here to use the Online Focus Group in %{language}"
   changing: "Changing"
   click_here: "Click here"
   close: "Close"
@@ -1283,7 +1283,7 @@ en:
   pricing: 'Pricing'
   prev: "Prev"
   more: "More..."
-  translate: "Help translate Loomio!"
+  translate: "Help translate!"
   translate_field: "See translation"
   loading_translation: "Loading translation..."
   translate_this_string: "Translate to %{language}"
@@ -1301,7 +1301,7 @@ en:
   start_a_group: "Start a group"
   starting: "Starting"
   subject: "Subject"
-  terms_of_service_html: "By clicking %{button_text}, you agree to Loomio's <a href='%{link_path}' target='_blank'>Terms of service</a>"
+  terms_of_service_html: "By clicking %{button_text}, you agree to our <a href='%{link_path}' target='_blank'>Rules of the Road</a>"
   thanks: "Thanks!"
   unlike: "Unlike"
   time_until_close: "%{quantity_of_time} until close"
