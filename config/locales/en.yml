@@ -8,7 +8,7 @@ en:
     discussion_activity: Change discussion volume when I participate
     discussion_activity_description: When you participate in a discussion, the volume setting will be changed to 'Loud', so all further activity will be emailed to you immediately.
     yesterday_on_loomio: Email me a summary of activity each day
-    yesterday_on_loomio_description: Each day at 6am, send an email with yesterday's unread activity. This is a great way to catch up on the groupsand it contains everything that is not muted.
+    yesterday_on_loomio_description: Each day at 6am, send an email with yesterday's unread activity. This is a great way to catch up on the group and it contains everything that is not muted.
     email_when_mentioned: Email me when I am @mentioned
     email_when_mentioned_description: When someone wants to get your attention, they'll @mention you. We recommend you leave this setting checked, so that you will get an email when this happens.
     proposal_closing_soon: Email me before a draft statement closes
@@ -207,7 +207,7 @@ en:
         other: "%{count} years"
 
   organisation:
-    name: "Loomio"
+    name: "Aotearoa Youth Declaration"
 
   # Text for screenreaders
   sr:
@@ -310,7 +310,7 @@ en:
       info_title: "What will deactivating your account mean?"
       memberships: "You will no longer be listed as a member in any of the groups you currently belong to."
       group_contributions: "The comments, proposals and discussions you've made in groups will stay, but we'll remove your name from these."
-      emails: "We'll stop sending you Loomio related emails."
+      emails: "We'll stop sending you related emails."
 
 
   #
@@ -906,7 +906,7 @@ en:
   confirm_your_details: "Confirm your details"
   link_up_your_account: "Link up your account"
   log_in_to_your_loomio_account: "Log in to your account to link it up with %{provider_name}."
-  now_that_your_logged_in: "Now that you've logged in with %{provider_name}, please confirm your details to create a Loomio account."
+  now_that_your_logged_in: "Now that you've logged in with %{provider_name}, please confirm your details to create an account."
   confirmation_not_received: "Didn't receive confirmation instructions?"
   unlock_not_received: "Didn't receive unlock instructions?"
   inactive_html: "This account has been deactivated. If you have any questions please <a href='%{path_to_contact}'>get in touch</a>."
@@ -942,7 +942,7 @@ en:
     invite_to_discussion_info: "Adding people to this discussion will send them an invitation to your group. When they accept, they'll be directed to this discussion."
     select_members: "Add members from %{group_name}"
     body_editable: |
-      Hey there, come make decisions with us! We're using a collaborative decision-making tool called Loomio.
+      Hey there, come talk about Civic Engagement and help develop NZ's pre-eminent youth voice document, the Youth Declaration.
     body_editable_discussion: |
       Hey there, come and join the discussion!
     message_body: "Invitation message"

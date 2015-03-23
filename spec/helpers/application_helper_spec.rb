@@ -35,10 +35,10 @@ describe ApplicationHelper do
 
   describe "display_title" do
     it "shows Loomio name" do
-      expect(helper.display_title(double(:size => 0))).to eq "Loomio"
+      expect(helper.display_title(double(:size => 0))).to eq "Aotearoa Youth Declaration – Online Focus Group"
     end
     it "shows notifications in paranthensis (if any)" do
-      expect(helper.display_title(double(:size => 2))).to eq "(2) Loomio"
+      expect(helper.display_title(double(:size => 2))).to eq "(2) Aotearoa Youth Declaration – Online Focus Group"
     end
   end
   describe "set_title" do
