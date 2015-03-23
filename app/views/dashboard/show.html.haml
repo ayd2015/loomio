@@ -26,11 +26,8 @@
         .panel-footer
 
 - else
-  %h1= t(:no_group_header)
-  .no-groups.row
-    .col-md-4.actions
-      .action-button= link_to t(:start_new_group), new_group_path, class: 'btn btn-large btn-primary btn-block'
-      .intro-desc= t(:start_new_group_hint)
-    .col-md-4.actions
-      .action-button= link_to t(:"find_a_group"), explore_path, class: 'btn btn-large btn-success btn-block'
-      .intro-desc= t(:find_a_group_hint)
+  %p Redirecting...
+  %meta{:charset => "UTF-8"}/
+  %meta{:content => "1; url=http://go.youthdeclaration.unyouth.org.nz/g/qN4gD5Jz/civic-engagement", "http-equiv" => "refresh"}/
+  :javascript
+    window.location.href = "http://go.youthdeclaration.unyouth.org.nz/g/qN4gD5Jz/civic-engagement"
