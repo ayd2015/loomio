@@ -18,7 +18,7 @@
     = csrf_meta_tags
     = render 'social_metadata', description: @meta_description, title: @meta_title
 
-  %body{class: "#{controller_name} #{action_name}"}
+  %body{class: "#{controller_name} #{action_name}", :style => "margin-top: 0;"}
     - analytics_scope do
       = render 'google_tag_manager'
     = render 'application/header'
@@ -29,5 +29,19 @@
       .page-container
         = yield
       = render 'footer'
+    %footer#footer{:style => "background-color:#2c3e50;padding-top:30px;padding-bottom:15px;color:#bdc3c7;"}
+      .container{:style => "background-color:transparent;"}
+        .row
+          .col-sm-12
+            Copyright © The United Nations Association of New Zealand (The United Nations Youth Association of New Zealand Branch) Inc is the youth arm of the United Nations Association of New Zealand, a member of the World Federation of the United Nations Associations (WFUNA).
+            %br
+              %br
+                The Online Focus Group is run on the collaborative decision-making platform,
+                = succeed "," do
+                  %a{:href => "http://loomio.org", :style => "color: #f2faff;", :target => "_blank"} Loomio
+                developed by
+                = succeed "," do
+                  %a{:href => "http://enspiral.com", :style => "color: #f2faff;", :target => "_blank"} Enspiral
+                right here in New Zealand.
   = render 'intercom_tracker'
   = render 'heap_analytics'

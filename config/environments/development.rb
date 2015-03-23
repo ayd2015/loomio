@@ -57,5 +57,5 @@ Loomio::Application.configure do
     :location => Rails.root.join('tmp/mail')
   }
 
-  config.action_controller.action_on_unpermitted_parameters = :raise
+  config.action_controller.action_on_unpermitted_parameters = :log
 end

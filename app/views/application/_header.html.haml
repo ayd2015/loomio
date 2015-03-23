@@ -1,5 +1,29 @@
-
-%nav.navbar.navbar-default.navbar-fixed-top
+/ Insert AYD global header, font and adjust Loomio nav
+:css
+  #affix-loomio.affix {
+      position: fixed;
+      top: 0;
+      width: 100%
+:css
+  / @import url(http://cloud.typography.com/6970112/674766/css/fonts.css);
+  
+  body {
+  / font-family: "Gotham Narrow", Helvetica, sans-serif    !important;
+  /line-height: 22px !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+  /font-family: "Gotham Narrow", Helvetica, sans-serif    !important;
+  /font-weight: 700;
+  /line-height: 28px !important;
+  }
+:javascript
+  $('#affix-loomio').affix({
+  });
+%nav.navbar.navbar-default{:style => "background-color: #548bc9; height: 81px; top:0; margin:0; width:100%; z-index: 1030; border: none; border-radius: 0px; "}
+  %a.navbar-brand{:href => "http://youthdeclaration.unyouth.org.nz/", :style => "padding: 0;"}
+    %img{:alt => "Aotearoa Youth Declaration", :src => "http://youthdeclaration.unyouth.org.nz/wp-content/uploads/2015/03/OFG-masterlogo2.png", :style => "display: inline-block; max-width: 300px; margin-left: 50px;"}
+%nav#affix-loomio.navbar.navbar-default{"data-offset-top" => "81", "data-spy" => "affix", :style => "margin-bottom: 0; z-index: 1030;"}
   .container
     .navbar-header
       - if user_signed_in?
@@ -9,7 +33,7 @@
           %span.icon-bar
           %span.icon-bar
 
-        %a.navbar-brand.app-logo{ href: dashboard_or_root_path, title: t(:"organisation.name"), style: "background-image: url(#{logo_path})" }
+        / %a.navbar-brand.app-logo{ href: dashboard_or_root_path, title: t(:"organisation.name"), style: "background-image: url(#{logo_path})" }
 
         %ul.nav.navbar-nav
           %li#inbox-container
@@ -27,17 +51,17 @@
                 %ul
                   %li Loading
               %li#notifications-see-more= link_to t(:see_all_notifications), notifications_path
-          %li.dropdown#groups
-            %a.dropdown-toggle.groups-dropdown-btn{href: "#", 'data-toggle' => 'dropdown'}
-              %i.fa.fa-group
-              %span.hidden-xs= t :"common.groups"
-            %ul.dropdown-menu
-              #group-dropdown-items
-              - if current_user.show_start_group_button?
-                %li.group-item.group-links
-                  =link_to t(:request_new_group), new_group_path, class: 'new-group'
-                %li.group-item.group-links
-                  =link_to t(:find_a_group), explore_path, class: 'find-group'
+          / %li.dropdown#groups
+          /  %a.dropdown-toggle.groups-dropdown-btn{href: "#", 'data-toggle' => 'dropdown'}
+          /    %i.fa.fa-group
+          /    %span.hidden-xs= t :"common.groups"
+          /  %ul.dropdown-menu
+          /    #group-dropdown-items
+          /    - if current_user.show_start_group_button?
+          /      %li.group-item.group-links
+          /        =link_to t(:request_new_group), new_group_path, class: 'new-group'
+          /      %li.group-item.group-links
+          /        =link_to t(:find_a_group), explore_path, class: 'find-group'
 
         .collapse.navbar-collapse#navbar-collapse
           %ul.nav.navbar-nav
