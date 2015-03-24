@@ -301,7 +301,7 @@ en:
     deactivate_account: "Deactivate account"
     about_deactivation: "What will this mean?"
     confirm_account_deactivation: "Are you sure you want to deactivate your account?"
-    reactivation_html: "You will need to <a href='%{link}'>contact us</a> to reactivate your account."
+    reactivation_html: "Your account will not be able to be reactivated."
     deactivation:
       title: "Deactivating your account"
       query: "Would you mind telling us why you are deactivating your account?"
@@ -588,7 +588,7 @@ en:
     motion_description_edited: 'edited the draft statement proposal description'
 
   discussion: "Discussion"
-  current_decision: "Current draft statements"
+  current_decision: "Current draft statement"
   previous_decisions: "Previous statements"
   see_previous_decisions: "See previous statements"
   see_more: "See more"
