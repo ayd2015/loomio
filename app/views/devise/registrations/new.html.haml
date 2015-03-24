@@ -11,6 +11,9 @@
               = link_to( t(:link_it_up_instead), new_user_session_path)
             .signin_container
               = render "form"
+            %p
+              By signing up for the Online Focus Group, you agree to the
+              %a{:href => "http://youthdeclaration.unyouth.org.nz/", :target => "_blank"} Rules of the Road and Privacy Policy
           -else
             %h2
               - if @invitation
@@ -27,3 +30,7 @@
               %h3= t :or_fill_in_this_form
               = render "form"
           .terms= t(:terms_of_service_html, button_text: t(:'devise.registrations.sign_up'), link_path: terms_of_service_path) if hosted_by_loomio?
+          %p
+            By signing up for the Online Focus Group, you agree to the
+            %a{:href => "http://youthdeclaration.unyouth.org.nz/policies", :target => "_blank"} Rules of the Road and Privacy Policy
+          
