@@ -11,9 +11,6 @@
               = link_to( t(:link_it_up_instead), new_user_session_path)
             .signin_container
               = render "form"
-            %p
-              By signing up for the Online Focus Group, you agree to the
-              %a{:href => "http://youthdeclaration.unyouth.org.nz/", :target => "_blank"} Rules of the Road and Privacy Policy
           -else
             %h2
               - if @invitation
