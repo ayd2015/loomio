@@ -19,7 +19,7 @@
           %i.fa.fa-pencil
 
 
-  .group-logo.hidden-xs{style: "background-image: url('#{logo_url}')"}
+  .group-logo.hidden-xs{style: "background-image: url(#{image_path 'civic.png'})"}
     - if can? :edit, @group
       .upload-button.logo-upload{title: t(:'tooltip.logo_upload')}
         = form_for @group, html: { multipart: true, class: 'js-submit-on-change' } do |f|
