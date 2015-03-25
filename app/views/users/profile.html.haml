@@ -20,12 +20,12 @@
         = render 'avatar_setting_option', user: @user, kind: 'gravatar'
       - if @user.has_uploaded_image?
         = render 'avatar_setting_option', user: @user, kind: 'uploaded'
-      %li.image-setting
-        = link_to t("profile_form.upload_new_image"), '#', class: 'btn btn-primary', id: 'upload-new-image'
-        = form_for [@user], :html => { :multipart => true, :id => 'upload-form' }, :url => upload_new_avatar_user_path(@user), :method => 'post' do
-          = file_field_tag :uploaded_avatar, id: 'uploaded-avatar'
-          = hidden_field_tag("user[avatar_kind]", "", :id => "user-avatar-kind")
-          = hidden_field_tag :max_file_size, User::MAX_AVATAR_IMAGE_SIZE_CONST, id: 'max-file-size'
+      /%li.image-setting
+      /  = link_to t("profile_form.upload_new_image"), '#', class: 'btn btn-primary', id: 'upload-new-image'
+      /  = form_for [@user], :html => { :multipart => true, :id => 'upload-form' }, :url => upload_new_avatar_user_path(@user), :method => 'post' do
+      /    = file_field_tag :uploaded_avatar, id: 'uploaded-avatar'
+      /    = hidden_field_tag("user[avatar_kind]", "", :id => "user-avatar-kind")
+      /    = hidden_field_tag :max_file_size, User::MAX_AVATAR_IMAGE_SIZE_CONST, id: 'max-file-size'
   .col-md-3
     = render 'avatar', user: @user, size: "large", id: 'avatar-preview'
 
